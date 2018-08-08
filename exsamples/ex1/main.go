@@ -8,10 +8,10 @@ import (
 
 var exsampleHtml = `
 <html>
-<body>
-  <h1>Hello!</h1>
-  <a href="/other-page">A link to another page</a>
-</body>
+	<body>
+		<h1>h1 tag text</h1>
+		<a href="/other-page">A link tag text</a>
+	</body>
 </html>
 `
 
