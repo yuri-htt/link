@@ -1,7 +1,7 @@
 /*
 HTMLから構造を探索し、Linkを見つけてパースする
 */
-package Link
+package link
 
 import (
 	"io"
