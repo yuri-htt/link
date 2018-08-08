@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
+	"link"
 	"strings"
-	"github.com/yuri-swift/link"
 )
 
-var htmlExsample = `
+var exsampleHtml = `
 <html>
 <body>
   <h1>Hello!</h1>
@@ -16,11 +16,11 @@ var htmlExsample = `
 `
 
 func main() {
-	r = strings.NewReader(htmlExsample)
-	links, error := link.Parse(r)
-	if error != nil {
-		panic(error)
+	r := strings.NewReader(exsampleHtml)
+	links, err := link.Parse(r)
+	if err != nil {
+		panic(err)
 	}
 	// %+v:構造体のフィールド名を表示
-	fmt.PrinfF("%+v", links)
+	fmt.Prinf("%+v", links)
 }
