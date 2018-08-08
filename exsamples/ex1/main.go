@@ -22,5 +22,5 @@ func main() {
 		panic(err)
 	}
 	// %+v:構造体のフィールド名を表示
-	fmt.Prinf("%+v", links)
+	fmt.Printf("%+v", links)
 }
