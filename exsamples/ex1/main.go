@@ -16,6 +16,8 @@ var exsampleHtml = `
 `
 
 func main() {
+	// strings package > func NewReader(s string) *Reader
+	// type Reader: io.Reader interfaceを実装
 	r := strings.NewReader(exsampleHtml)
 	links, err := link.Parse(r)
 	if err != nil {

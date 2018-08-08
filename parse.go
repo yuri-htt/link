@@ -16,6 +16,7 @@ type Link struct {
 }
 
 func Parse(r io.Reader) ([]Link, error) {
+	// func Parse(r io.Reader) (*Node, error)
 	doc, err := html.Parse(r)
 	if err != nil {
 		return nil, err
