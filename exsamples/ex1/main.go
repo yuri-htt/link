@@ -10,7 +10,11 @@ var exsampleHtml = `
 <html>
 	<body>
 		<h1>h1 tag text</h1>
-		<a href="/other-page">A link tag text</a>
+		<a href="/other-page">
+			A link tag text
+			<span> some span </span>
+		</a>
+		<a href="/other-page-2">A link tag text</a>
 	</body>
 </html>
 `
